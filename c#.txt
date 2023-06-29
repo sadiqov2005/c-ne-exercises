@@ -1,0 +1,58 @@
+bool isContinue = true; // O(1)
+
+while (isContinue == true) // O(n)
+{
+    Console.Write("1.ededi gir: "); // O(1)
+    int firstNUMBER = Convert.ToInt32(Console.ReadLine()); // O(1)
+    Console.Write("2.ededi gir: "); // O(1)
+    int secondNUMBER = Convert.ToInt32(Console.ReadLine()); // O(1)
+
+    if (firstNUMBER <= secondNUMBER) // O(n)
+    {
+        int result = 0; // O(1)
+        for (int i = firstNUMBER; i <= secondNUMBER; i++) // O(n)
+        {
+            result += i; // O(n)
+        }
+        Console.WriteLine("Toplam: " + result); // O(1)
+    }
+    else if (firstNUMBER > secondNUMBER) // O(n)
+    {
+        Console.WriteLine("Yenidən girin.(Birinci ədəd ikincidən kiçik olmalıdır)"); // O(1)
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Console.WriteLine("Nece eded gireceksiniz? ");//0(1)
+int count = Convert.ToInt32(Console.ReadLine());//0(1)
+int sum = 0;//0(1)
+
+
+for (int i=1;i<=count;i++)//0(n)
+{
+
+
+
+    
+    Console.WriteLine(i+".ededi gir:");//0(1)
+    int number=Convert.ToInt32(Console.ReadLine());//0(1)
+    sum+= number;   //0(n)
+
+
+
+
+}
+double average=sum/ count;//0(1)
+Console.WriteLine("ortalma: "+average);//0(1)
